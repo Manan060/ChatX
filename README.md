@@ -1,16 +1,34 @@
-<<<<<<< HEAD
-# ChatX
-=======
-# React + Vite
+# ChatX 💬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+A real-time chat application built with React and Firebase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔧 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 5ae9f53 (Initial commit)
+- **Frontend**: React  
+- **Backend**: Firebase (Authentication, Firestore), Cloudinary (Image Storage)
+
+---
+
+## ✨ Features
+
+- 🔹 Live chat with image support  
+- 🔹 User authentication (Login / Signup)  
+- 🔹 Profile update  
+- 🔹 Add / Block / Unblock users  
+- 🔹 Search filter for users  
+- 🔹 Change password functionality  
+
+---
+
+## 🚧 Currently Working On
+
+- 🖥️ App responsiveness (currently optimised for web screens only)
+
+---
+
+## 📺 Demo
+
+[Watch on YouTube](https://your-youtube-video-url.com) 
