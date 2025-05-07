@@ -1,0 +1,145 @@
+.edit-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .edit-modal {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background-color: rgba(17, 24, 38, 0.95);
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .edit-modal h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Profile Picture Section */
+  .edit-profile-pic-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .edit-profile-pic-section label {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .profile-preview-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    margin-top: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #1f2a3c;
+    align-self: center;
+  }
+  
+  .profile-pic-preview {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .default-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #999;
+    font-size: 36px;
+  }
+  
+  .default-avatar-icon {
+    font-size: 36px;
+  }
+  
+  /* Bio Section */
+  .edit-bio-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .edit-bio-section label {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .edit-bio-section textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: #1f2a3c;
+    color: white;
+    font-size: 14px;
+  }
+  
+  /* Buttons */
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  .save-btn,
+  .cancel-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .save-btn {
+    background-color: #3978ea;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #2f65c7;
+  }
+  
+  .cancel-btn {
+    background-color: #555;
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #444;
+  }
+  
+  /* Spinner Animation */
+  .spinner-icon-1 {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  

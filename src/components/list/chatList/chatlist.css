@@ -1,0 +1,163 @@
+.chatlist {
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+    min-width: 250px;
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  /* Search Section */
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .searchBar {
+    flex: 1;
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 200px;
+  }
+  
+  .searchBar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    flex: 1;
+    font-size: 1rem;
+  }
+  
+  .searchBar img,
+  .icons-class {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .add {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(17, 25, 40, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Chat List Item */
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #dddddd35;
+    transition: background-color 0.3s ease;
+  }
+  
+  .item img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+  }
+  
+  .texts span {
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .texts p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .chatlist {
+      padding: 10px 5px;
+    }
+  
+    .search {
+      gap: 10px;
+      padding: 10px;
+      justify-content: space-between;
+    }
+  
+    .searchBar {
+      flex: 1 1 100%;
+    }
+  
+    .add {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .item {
+      padding: 12px;
+      gap: 10px;
+    }
+  
+    .texts span {
+      font-size: 14px;
+    }
+  
+    .texts p {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .add {
+      align-self: flex-end;
+    }
+  
+    .item {
+      padding: 10px;
+      gap: 8px;
+    }
+  
+    .texts span {
+      font-size: 13px;
+    }
+  
+    .texts p {
+      font-size: 11px;
+    }
+  
+    .searchBar input {
+      font-size: 0.95rem;
+    }
+  }
+  
+  .timestamp {
+    font-size: 0.8rem;
+    color: #fff;
+    margin-top: 4px;
+  }
+  

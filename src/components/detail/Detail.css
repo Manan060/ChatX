@@ -1,0 +1,277 @@
+.detail {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+
+.user-info {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #dddddd35;
+}
+
+.user-info img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-info h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-info p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Info section */
+.info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow-y: auto;
+}
+
+/* Option section (Media header) */
+.option img {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(17, 25, 40, 0.3);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.otitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.otitle span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Photos section */
+.photos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.photo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.photo-detail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo-detail img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.photo-detail span {
+    font-size: 14px;
+    color: lightgray;
+    font-weight: 300;
+}
+
+.d-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(17, 25, 40, 0.3);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Block Button */
+.blockbtn {
+    padding: 10px 20px;
+    background-color: rgba(197, 20, 55, 0.8);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.blockbtn:hover {
+    background-color: rgb(197, 20, 55);
+}
+
+/* Logout Button */
+.logoutbtn {
+    padding: 10px 20px;
+    background-color: #3978EA;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logoutbtn:hover {
+    background-color: rgb(197, 20, 55);
+}
+
+/* ------------------- */
+/* Responsive Styles */
+/* ------------------- */
+
+/* Tablets and small laptops */
+@media (max-width: 768px) {
+    .user-info {
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .user-info img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .user-info h2 {
+        font-size: 16px;
+    }
+
+    .user-info p {
+        font-size: 12px;
+    }
+
+    .info {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .photos {
+        gap: 15px;
+    }
+
+    .photo-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .photo-detail {
+        gap: 10px;
+    }
+
+    .photo-detail span {
+        font-size: 12px;
+    }
+
+    .blockbtn,
+    .logoutbtn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .user-info {
+        padding: 15px;
+        align-items: center;
+    }
+
+    .user-info img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .user-info h2 {
+        font-size: 14px;
+    }
+
+    .user-info p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .info {
+        padding: 10px;
+        gap: 12px;
+    }
+
+    .photos {
+        gap: 10px;
+    }
+
+    .photo-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .photo-detail {
+        gap: 5px;
+    }
+
+    .photo-detail span {
+        font-size: 12px;
+    }
+
+    .blockbtn,
+    .logoutbtn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Short screen height (e.g. 330px) */
+@media (max-height: 500px) {
+    .user-info img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .user-info h2 {
+        font-size: 14px;
+    }
+
+    .user-info p {
+        font-size: 12px;
+    }
+
+    .photo-detail span {
+        font-size: 12px;
+    }
+
+    .photo-detail img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .d-icon {
+        width: 25px;
+        height: 25px;
+        padding: 8px;
+    }
+
+    .blockbtn,
+    .logoutbtn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
